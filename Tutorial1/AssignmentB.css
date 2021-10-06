@@ -1,0 +1,21 @@
+h1 {
+    font-style: italic;
+    font-size: 30px;
+}
+
+p {
+    font-style: normal;
+    font-size: 15px;
+}
+
+table, th, td {
+    border: 1px dashed hotpink;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: square;
+}

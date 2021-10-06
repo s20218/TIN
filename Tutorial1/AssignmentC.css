@@ -1,0 +1,32 @@
+div{
+  width: 45%;
+  padding: 5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left-column{
+  float: left;
+}
+
+img:nth-of-type(odd){
+  float: left;
+}
+
+img:nth-of-type(even){
+  float: right;
+}
+
+.right-column{
+  float: right;
+}
+
+img{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
