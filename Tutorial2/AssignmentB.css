@@ -1,0 +1,12 @@
+label, input, select, textarea, button, option {
+    font-size: 15px;
+    font-style: italic;
+}
+
+label {
+    color: blue;
+}
+
+.mandatory-label {
+    color: red;
+}
