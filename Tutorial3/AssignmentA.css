@@ -1,0 +1,90 @@
+body {
+    text-align: center;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 300px auto;
+  grid-gap: 1em;
+  grid-template-areas: "header header"
+                        "sidebar-1 article"
+                        "footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+.sidebar-left {
+  grid-area: sidebar-1;
+}
+
+article {
+  grid-area: article;
+  column-count: 4;
+  column-gap: 25px;
+}
+
+footer {
+    grid-area: footer;
+}
+
+header>h1, footer>h1{
+  font-family: 'Montserrat';
+}
+
+header>img{
+  transform: rotate(10deg);
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px black;
+  justify-content: center;
+}
+
+header, footer{
+  width: 100%;
+  text-align: center;
+}
+
+aside>figure>img {
+  width: 100%;
+}
+
+article>p{
+  margin: 0;
+  text-align: justify;
+  font-family: 'Andada Pro';
+}
+
+article>img{
+  float: left;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+blockquote{
+  float: right;
+  color: red;
+  font-size: 20px;
+  font-family: 'Montserrat';
+}
+
+figcaption{
+  font-family: 'Andada Pro';
+}
+
+@media only screen and (max-width: 800px){
+  .grid {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: "header"
+                          "article"
+                          "sidebar-1"
+                          "footer";
+  }
+
+  article {
+    column-count: 1;
+  }
+}
