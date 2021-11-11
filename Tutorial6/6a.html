@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather</title>
+  <script src="6a.js"></script>
+<body>
+
+  <h2>Temperature converter</h2>
+  <div>
+    <form name="temperatureConverter">
+      <input type="number" id="temperature" name="temperature" placeholder="Enter the temperature">
+      <select id="measure">
+        <option value="celsius">From C to F</option>
+        <option value="fahrenheit">From F to C</option>
+      </select>
+      <input type="button" value="Convert" onclick="convert()"> 
+    </form>
+  </div>
+  <h2 id="result"></h2>
+</body>
+</html>

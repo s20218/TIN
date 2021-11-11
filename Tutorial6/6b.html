@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Paragraph</title>
+
+<body>
+    <p>JavaScript often abbreviated as JS, 
+       is a programming language that conforms to the ECMAScript specification.
+       JavaScript is high-level, often just-in-time compiled and multi-paradigm. 
+       It has dynamic typing, prototype-based object-orientation and first-class functions.
+    </p>
+</body>
+
+<script>
+    function addNewParagraph() {
+        let content = document.createElement('p');
+        let newParagraph = document.createTextNode("The end :)");
+        content.appendChild(newParagraph);
+        document.body.appendChild(content);
+    }
+
+    setTimeout("addNewParagraph()", 5000);
+</script>
+</head>

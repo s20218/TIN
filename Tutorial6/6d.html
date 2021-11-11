@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Assignment 6d</title>
+    <script src="6d.js"></script>
+
+<body>
+
+    <h2>Warehouse</h2>
+    <div>
+        <form name="warehouse">
+            <input type="text" id="itemName" placeholder="Item name">
+            <input type="number" id="amount" placeholder="Amount">
+            <input type="button" value="Add" onclick="add()">
+            <p id="error" style="color: red;"></p>
+        </form>
+    </div>
+    <h2 id="result"> </h2>
+    <table id="table">
+        <tr>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Status</th>
+        </tr>
+    </table>  
+</body>
+
+<style>
+    table,
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+
+</html>
